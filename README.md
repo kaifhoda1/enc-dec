@@ -48,10 +48,18 @@ then
         echo "PLEASE PROVIDE THE TEXT TO ENCRYPT: "
         read enc
         echo "ENCRYPTED VALUE = $(echo $enc | tr 'a-zA-Z' 'd-za-cD-ZA-C')"
-else
+
+elif [ $ch -eq 2 ]
+then
         echo "PLEASE PROVIDE THE TEXT TO DECRYPT: "
         read dec
         echo "DECRYPTED VALUE = $(echo $dec | tr 'd-za-cD-ZA-C' 'a-zA-Z')"
+
+else
+        echo "INVALID OPTION! PLEASE SELECT 1 OR 2 ONLY."
+
 fi
 ```
-![Uploading image.png…]()
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/26548135-c9dc-4f8a-a818-272f7abd402b" />
+
