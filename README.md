@@ -61,5 +61,4 @@ else
 fi
 ```
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/26548135-c9dc-4f8a-a818-272f7abd402b" />
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f04df744-8c24-4c3d-95ec-5a9d9e9b2585" />
