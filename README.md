@@ -1,65 +1,72 @@
-# Caesar Cipher - Encrypt & Decrypt
+# Encryption & Decryption Scripts
 
-A simple bash script that encrypts and decrypts text using the Caesar Cipher method.
+A collection of classical encryption and decryption scripts written in Bash.
 
-## What is Caesar Cipher?
+---
 
-Caesar Cipher is one of the oldest encryption techniques. It shifts every letter in the text by 3 positions forward to encrypt and 3 positions backward to decrypt.
+## Scripts
+
+### 1. Caesar Cipher (`caeser.sh`)
+
+One of the oldest encryption techniques. Shifts every letter by 3 positions.
 
 **Example:**
 - `hello` → encrypted → `khoor`
 - `khoor` → decrypted → `hello`
 
-## How to Use
-
+**How to use:**
 ```bash
 chmod +x caeser.sh
 ./caeser.sh
 ```
+- Choose `1` to Encrypt
+- Choose `2` to Decrypt
+- Choose anything else → Invalid option message
 
-You will be asked to choose:
-- `1` for Encryption
-- `2` for Decryption
+---
 
-Then provide your text and the script will do the rest.
+### 2. ROT13 (`rot13.sh`)
 
-## Files
+A special case of Caesar Cipher that shifts by 13 positions.
+ROT13 is unique — encrypting and decrypting use the exact same operation because 13 + 13 = 26 (full alphabet).
 
-| File | Description |
-|------|-------------|
-| `caeser.sh` | Main bash script for encrypt and decrypt |
+**Example:**
+- `hello` → encrypted → `uryyb`
+- `uryyb` → decrypted → `hello`
 
-## Script Preview
-
+**How to use:**
 ```bash
-#!/bin/bash
-
-echo "##########@@@@@@@@##########"
-echo "CAESER CIPHER ENCRYPT/DECRYPT"
-echo "##########@@@@@@@@##########"
-
-echo "PLEASE SELECT 1 TO ENCRYPT AND 2 TO DECRYPT"
-echo "1) ENCRYPTION    2) DECRYPTION"
-echo "PLEASE PROVIDE THE VALUE: "
-read ch
-
-if [ $ch -eq 1 ]
-then
-        echo "PLEASE PROVIDE THE TEXT TO ENCRYPT: "
-        read enc
-        echo "ENCRYPTED VALUE = $(echo $enc | tr 'a-zA-Z' 'd-za-cD-ZA-C')"
-
-elif [ $ch -eq 2 ]
-then
-        echo "PLEASE PROVIDE THE TEXT TO DECRYPT: "
-        read dec
-        echo "DECRYPTED VALUE = $(echo $dec | tr 'd-za-cD-ZA-C' 'a-zA-Z')"
-
-else
-        echo "INVALID OPTION! PLEASE SELECT 1 OR 2 ONLY."
-
-fi
+chmod +x rot13.sh
+./rot13.sh
 ```
-<img width="1492" height="2516" alt="diagram (1)" src="https://github.com/user-attachments/assets/b5e3423d-c459-4803-b227-a5e89e212c31" />
+- Choose `1` to Encrypt
+- Choose `2` to Decrypt
+- Choose anything else → Invalid option message
+
+---
+
+## Key Differences
+
+| Feature | Caesar Cipher | ROT13 |
+|---------|--------------|-------|
+| Shift | 3 positions | 13 positions |
+| Decrypt method | Reverse mapping | Same as encrypt |
+| Numbers/symbols | Not encrypted | Not encrypted |
+
+---
+
+## What These Scripts Do NOT Encrypt
+- Numbers — `123` stays `123`
+- Special characters — `@!#` stays `@!#`
+- Only alphabets a-z and A-Z are shifted
+
+---
+
+## Author
+
+Kaif Hoda — Cyber Security Learner
+```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/776f6e9b-7996-4ecb-875c-0b24e3b5ed1c" />
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5917dfb4-0538-44da-b5e0-f0349d6143d6" />
 
