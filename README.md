@@ -66,7 +66,5 @@ chmod +x rot13.sh
 
 Kaif Hoda — Cyber Security Learner
 ```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/776f6e9b-7996-4ecb-875c-0b24e3b5ed1c" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5917dfb4-0538-44da-b5e0-f0349d6143d6" />
 
