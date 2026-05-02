@@ -66,5 +66,3 @@ chmod +x rot13.sh
 
 Kaif Hoda — Cyber Security Learner
 ```
-
-
